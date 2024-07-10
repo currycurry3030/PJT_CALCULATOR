@@ -1,5 +1,7 @@
 from unittest import TestCase
+
 from calc import Calc
+
 
 class TestCalc(TestCase):
     def setUp(self):
@@ -14,3 +16,9 @@ class TestCalc(TestCase):
         for (number_1, number_2, ans) in lst_pair_number:
             ret = self.calc.getSum(number_1,number_2)
             self.assertEqual(ans, ret)
+            
+    def test_get_zegop(self):
+        self.assertEqual(81, self.calc.getZegop(9))
+        
+    def test_getGop(self):
+        self.assertEqual(12, self.calc.getGop(3, 4))
