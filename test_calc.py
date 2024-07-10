@@ -3,12 +3,12 @@ from calc import Calc
 
 
 class TestCalc(TestCase):
-    pass
+
+    def setUp(self):
+        super().setUp()
+        self.calc = Calc()
 
     def test_get_sum_sum(self):
-        calc = Calc()
+        self.assertEqual(self.calc.get_sum_sum(1, 2, 3), 6)
 
-        result = calc.get_sum_sum(1, 2, 3)
-
-        self.assertEqual(result, 6)
 
