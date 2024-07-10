@@ -7,3 +7,6 @@ class Calc:
       
     def getGop(self, a, b):
         return a * b
+      
+    def get_sum_sum(self, a, b, c):
+        return a + b + c
