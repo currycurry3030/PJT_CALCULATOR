@@ -1,2 +1,3 @@
 class Calc:
-    pass
+    def getGop(self, a, b):
+        return a * b
